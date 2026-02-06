@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: ealen/echo-server
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+
+containerPort: 80
+
+env:
+  - name: ECHO_SERVER_TEXT
+    value: "Hello from Helm on EKS!"

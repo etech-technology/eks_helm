@@ -1,0 +1,5 @@
+1) To access locally (port-forward):
+   kubectl -n {{ .Release.Namespace }} port-forward svc/{{ include "hello.fullname" . }} 8081:{{ .Values.service.port }}
+
+2) To see your Pods:
+   kubectl -n {{ .Release.Namespace }} get pods -l app.kubernetes.io/instance={{ .Release.Name }}
