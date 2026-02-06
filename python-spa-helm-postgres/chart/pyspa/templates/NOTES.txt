@@ -1,0 +1,6 @@
+1) Port-forward (recommended for demo):
+   kubectl -n {{ .Release.Namespace }} port-forward svc/{{ include "pyspa.fullname" . }} 8080:{{ .Values.service.port }}
+   Open http://localhost:8080
+
+2) If you enabled Ingress:
+   - ensure you have an Ingress controller (e.g., AWS Load Balancer Controller on EKS)

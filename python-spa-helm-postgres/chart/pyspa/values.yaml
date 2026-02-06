@@ -1,0 +1,43 @@
+replicaCount: 1
+
+image:
+  repository: YOUR_IMAGE_REPO/pyspa
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  className: ""
+  host: ""
+  path: /
+
+resources: {}
+
+# App config
+app:
+  # DB host is the name of the Postgres Service inside the cluster.
+  # We set postgresql.fullnameOverride below to make this stable as "postgres".
+  dbHost: "postgres"
+  dbPort: 5432
+  dbName: "appdb"
+  dbUser: "appuser"
+  dbPassword: "apppass"
+
+postgresql:
+  # Make the Postgres service name predictable: "postgres"
+  fullnameOverride: "postgres"
+
+  auth:
+    username: "appuser"
+    password: "apppass"
+    database: "appdb"
+    postgresPassword: "adminpass"
+
+  primary:
+    persistence:
+      enabled: true
+      size: 8Gi
