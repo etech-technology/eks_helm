@@ -30,7 +30,7 @@ helm history web -n demo
 helm rollback web 1 -n demo
 ```
 
-## 4) Teach chart anatomy (your own chart)
+## 4) chart anatomy (your own chart)
 Render first (no deploy):
 ```bash
 helm template demo-hello ./charts/hello -n demo | head -n 60
@@ -50,7 +50,7 @@ kubectl -n demo port-forward svc/demo-hello-hello 8081:80
 
 Upgrade (replicas + message):
 ```bash
-helm upgrade demo-hello ./charts/hello -n demo   --set replicaCount=2   --set env[0].value="Updated via helm upgrade!"
+# helm upgrade demo-hello ./charts/hello -n demo   --set replicaCount=2   --set env[0].value="Updated via helm upgrade!"
 ```
 
 ## 5) Optional: EKS external LB

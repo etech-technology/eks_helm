@@ -1,4 +1,4 @@
-# Helm Basics (Teaching Notes)
+# Helm Basics 
 
 ## Vocabulary
 - **Chart**: a package (templates + defaults)
@@ -26,5 +26,5 @@ kubectl -n demo describe pod <pod>
 kubectl -n demo logs <pod>
 ```
 
-## Teaching point
+## point of focus
 Helm is not “magic deployment”—Helm **renders YAML** from templates + values, then applies it.
