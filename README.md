@@ -1,6 +1,6 @@
-# EKS HelmCharts 2-Hour Demo (Beginner-Friendly)
+# EKS HelmCharts  Demo (Beginner-Friendly)
 
-This repo is a **ready-to-run 2-hour live demo** for students who are **new to Kubernetes** and need to learn **Helm charts on an EKS cluster**.
+This repo is a **ready-to-run live demo** for students who are **new to Kubernetes** and need to learn **Helm charts on an EKS cluster**.
 
 You will:
 - explain Kubernetes basics (Pods / Deployments / Services / Namespaces)
