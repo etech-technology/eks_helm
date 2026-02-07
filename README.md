@@ -1,6 +1,6 @@
 # EKS HelmCharts  Demo (Beginner-Friendly)
 
-This repo is a **ready-to-run live demo** for students who are **new to Kubernetes** and need to learn **Helm charts on an EKS cluster**.
+This repo is a **ready-to-run live** for students who are **new to Kubernetes** and need to learn **Helm charts on an EKS cluster**.
 
 You will:
 - explain Kubernetes basics (Pods / Deployments / Services / Namespaces)
@@ -13,7 +13,7 @@ You will:
 
 ---
 
-## Quick Start (Instructor)
+## Quick Start 
 
 ### Prereqs
 - `kubectl` configured for your EKS cluster (e.g., `kubectl get nodes` works)
